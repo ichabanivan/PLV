@@ -1,0 +1,136 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-add {
+  font-size: 2rem;
+  width: 1em;
+}
+
+.icon-album {
+  font-size: 1.8182rem;
+  width: 1.09999em;
+}
+
+.icon-arrow_left {
+  font-size: 2.6015rem;
+  width: 0.61384em;
+}
+
+.icon-arrow_right {
+  font-size: 2.5859rem;
+  width: 0.61271em;
+}
+
+.icon-cam {
+  font-size: 3.2rem;
+  width: 1.25em;
+}
+
+.icon-close {
+  font-size: 2.6015rem;
+  width: 1.01449em;
+}
+
+.icon-comments {
+  font-size: 1.7209rem;
+  width: 1.16218em;
+}
+
+.icon-delete {
+  font-size: 1.5139rem;
+  width: 0.79265em;
+}
+
+.icon-edit {
+  font-size: 2rem;
+  width: 1em;
+}
+
+.icon-envelope {
+  font-size: 1.3rem;
+  width: 1.15385em;
+}
+
+.icon-heart {
+  font-size: 1.6858rem;
+  width: 1.18638em;
+}
+
+.icon-home {
+  font-size: 2.1696rem;
+  width: 0.92183em;
+}
+
+.icon-like {
+  font-size: 1.6858rem;
+  width: 1.18638em;
+}
+
+.icon-loupe {
+  font-size: 4.0001rem;
+  width: 0.9996em;
+}
+
+.icon-more {
+  font-size: 0.425rem;
+  width: 4em;
+}
+
+.icon-name {
+  font-size: 1.6102rem;
+  width: 0.93156em;
+}
+
+.icon-no_like {
+  font-size: 1.9858rem;
+  width: 1.15822em;
+}
+
+.icon-off {
+  font-size: 1.5rem;
+  width: 0.993em;
+}
+
+.icon-password {
+  font-size: 1.7rem;
+  width: 0.88235em;
+}
+
+.icon-search {
+  font-size: 1.4988rem;
+  width: 1.0004em;
+}
+
+.icon-soc_email {
+  font-size: 2rem;
+  width: 1em;
+}
+
+.icon-soc_fb {
+  font-size: 2rem;
+  width: 1em;
+}
+
+.icon-soc_twitter {
+  font-size: 2rem;
+  width: 1em;
+}
+
+.icon-soc_vk {
+  font-size: 2rem;
+  width: 1em;
+}
+
+.icon-social_google {
+  font-size: 2rem;
+  width: 1em;
+}
+
+.icon-top {
+  font-size: 2.0953rem;
+  width: 1.27442em;
+}

@@ -1,0 +1,26 @@
+extends ../template
+include ../_mixin
+
+block title
+  title title
+
+block description
+  meta(name='', content='')
+
+block color
+  +color('#CCC')
+
+block loadFont
+  link(href="https://fonts.googleapis.com/css?family=Roboto", rel="stylesheet")
+
+block loadCSS
+  link(rel="stylesheet", href="css/index.css")
+  link(rel="stylesheet", href="css/libs.css")
+
+block content
+  .bg
+
+block loadJS
+    script(src="js/commons.js")
+    script(src="js/index.js")
+

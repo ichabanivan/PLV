@@ -1,0 +1,41 @@
+# Numerous always-ignore extensions
+*.bak
+*.diff
+*.err
+*.exe
+*.log
+*.orig
+*.rej
+*.sass-cache
+*.swo
+*.swp
+*.vi
+*~
+
+# Folders to ignore
+.CVS
+.git
+.hg
+.svn
+lintCache.json
+node_modules
+bower_components
+dist
+tmp
+.idea
+
+# File-based project format:
+*.iws
+
+# Sass template
+.sass-cache/
+*.css.map
+
+# Node template
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
