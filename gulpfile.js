@@ -403,7 +403,7 @@ gulp.task('svg:sprites', () => {
       }
     }
   }))
-  .pipe(gulpIf('*.scss', combine(sass({outputStyle: 'expanded'}), gulp.dest(path.app.css.folder)), combine(replace('<svg', '<svg class="sprites" style="display:none"'), gulp.dest(path.dist.img.folder))))
+  .pipe(gulpIf('*.scss', combine(sass({outputStyle: 'expanded'}), gulp.dest(path.app.css.folder)), gulp.dest(path.dist.img.folder)))
   .pipe(browserSync.reload({stream: true}));
 });
 
