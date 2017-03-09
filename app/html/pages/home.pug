@@ -14,13 +14,13 @@ block loadFont
   link(href="https://fonts.googleapis.com/css?family=Roboto", rel="stylesheet")
 
 block loadCSS
-  link(rel="stylesheet", href="css/index.css")
+  link(rel="stylesheet", href="css/home.css")
   link(rel="stylesheet", href="css/libs.css")
 
 block content
-  .bg
+  include ../components/header
 
 block loadJS
     script(src="js/commons.js")
-    script(src="js/index.js")
+    script(src="js/home.js")
 

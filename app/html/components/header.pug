@@ -1,0 +1,24 @@
+header.header
+  .left
+    .left__photo
+      img(src="../img/photo.png", alt="Your photo").left__photo-circle
+    .about
+      h2.about__name Антон Черепов
+      p.about__description Я веб разработчик. Мне 24 года. Люблю путешествия, кодинг, фриланс и активный отдых.
+      .about__social
+        - var icons = ['soc_vk', 'soc_fb', 'soc_twitter', 'social_google', 'soc_email'];
+        each icon in icons
+          a(href='#', title='#{icon}')
+            svg(class="icon " + icon)
+              use(xlink:href='#' + icon)
+  .right
+    a.right__edit(href="#")
+      svg(class="icon edit")
+        use(xlink:href='#edit')
+      span Редактировать
+    br
+    a.right__exit(href="#")
+      svg(class="icon off")
+        use(xlink:href='#off')
+      span Выйти
+  .search
