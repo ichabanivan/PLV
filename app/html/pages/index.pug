@@ -18,6 +18,16 @@ block loadCSS
   link(rel="stylesheet", href="css/libs.css")
 
 block content
+  .wrap
+    header.header
+      .header_wrap_text
+        h1 Добро пожаловать
+        p Перед вами сервис, который поможет вам организовать свои фотографии в альбомы и поделиться ими со всем миром!
+      form.form
+        svg(class="icon soc_email")
+          use(xlink:href='#soc_email')
+        input(type="email" placeholder="Электронная почта")
+        input(type="pasworld" placeholder="Пароль")
 
 block loadJS
     script(src="js/commons.js")
