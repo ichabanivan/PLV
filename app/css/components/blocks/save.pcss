@@ -11,8 +11,25 @@
   top: 290px;
   z-index: 2;
 
-  @media screen and (width <= 480px) {
+  @media screen and (width <= 600px) {
     top: 500px;
+  }
+
+  &__cancel,
+  &__save {
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  &__cancel {
+    color: var(--btn-blue) var(--white);
+  }
+
+  &__save {
+    color: var(--white) var(--btn-blue);
   }
 }
 

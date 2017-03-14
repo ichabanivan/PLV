@@ -1,0 +1,55 @@
+.change {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+
+  @media screen and  (width <= 992px) {
+    margin: 0;
+  }
+
+  @media screen and (width <= 768px) {
+    width: 180px;
+  }
+
+  @media screen and (width <= 600px) {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    .icon-setting {
+      size: 3rem;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  &__btn {
+    display: block;
+    padding: 1rem;
+    color: var(--icon-gray);
+    text-decoration: none;
+
+    svg {
+      transition: 1s transform ease-in-out;
+      transform: rotate(0deg);
+
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
+
+    @media screen and (width <= 768px) {
+      padding: 15px;
+    }
+
+    .icon-setting {
+      size: 3rem;
+    }
+  }
+}

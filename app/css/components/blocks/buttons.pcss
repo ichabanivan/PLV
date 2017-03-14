@@ -19,7 +19,13 @@
     display: block;
     float: right;
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <= 700px) {
+      &:hover {
+        width: 40px;
+      }
+    }
+
+    @media screen and (width <= 600px) {
       position: absolute;
 
       &:hover {
@@ -67,7 +73,7 @@
       width: 105px;
     }
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <= 600px) {
       top: 20px;
       right: 20px;
     }
@@ -78,7 +84,7 @@
       width: 170px;
     }
 
-    @media screen and (width <= 768px) {
+    @media screen and (width <= 600px) {
       top: 20px;
       left: 20px;
     }
