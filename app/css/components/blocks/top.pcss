@@ -1,0 +1,17 @@
+.top {
+  display: flex;
+  flex-direction: row;
+  height: 290px;
+  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 10px 20px;
+
+  @media screen and (width <= 480px) {
+    height: 500px;
+  }
+}
+
+@import "left.pcss";
+@import "buttons.pcss";

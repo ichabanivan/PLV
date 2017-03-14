@@ -1,0 +1,55 @@
+.leftMain {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 100%;
+  padding: 30px *;
+
+  @media screen and (width <= 480px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__photo {
+    padding: 30px;
+    align-self: center;
+
+    &-circle {
+      border-radius: 50%;
+    }
+
+    &-hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@import "about.pcss";
+
+.leftEdit {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 100%;
+  padding: 30px *;
+
+  @media screen and (width <= 480px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__photo {
+    padding: 30px;
+    align-self: center;
+
+    &-circle {
+      border-radius: 50%;
+    }
+
+    &-hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@import "about.pcss";

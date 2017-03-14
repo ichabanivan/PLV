@@ -1,0 +1,19 @@
+.save {
+  display: flex;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 60px;
+  background-color: var(--bg-dark-opacity);
+  border-top: 1px solid var(--bg-light-opacity);
+  position: absolute;
+  width: 100%;
+  top: 290px;
+  z-index: 2;
+
+  @media screen and (width <= 480px) {
+    top: 500px;
+  }
+}
+
+@import "explore.pcss";

@@ -1,0 +1,22 @@
+.panel {
+  height: 290px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 10px 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  background-color: var(--bg-dark-opacity);
+  display: none;
+
+  @media screen and (width <= 480px) {
+    height: 500px;
+  }
+}
+
+@import "left.pcss";
+@import "editing.pcss";

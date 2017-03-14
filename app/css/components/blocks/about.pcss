@@ -1,0 +1,42 @@
+
+.about {
+  color: #fff;
+
+  &__name {
+    color: #fff;
+  }
+
+  &__description {
+    color: #fff;
+
+    @media screen and (width <= 480px) {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+
+    @media screen and (width <= 480px) {
+      justify-content: center;
+    }
+
+    a:last-of-type {
+      .icon {
+        margin-right: 0;
+      }
+    }
+
+    .icon {
+      fill: var(--icon-gray);
+      margin-right: 15px;
+
+      &:hover {
+        cursor: pointer;
+        fill: var(--white);
+      }
+    }
+  }
+}

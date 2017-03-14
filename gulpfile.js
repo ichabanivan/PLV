@@ -43,9 +43,8 @@ let project = {
 
 let path = require("./path");
 
-let postcssImport   = require('postcss-import'),
-    precss          = require('precss'),
-    propertyLookup  = require('postcss-property-lookup'),
+let precss          = require('precss'),
+    important       = require('postcss-important-shorthand'),
     pxtorem         = require('postcss-pxtorem')({
       rootValue: 16,               // (Number) The root element font size.
       unitPrecision: 5,            // (Number) The decimal numbers to allow the REM units to grow to.
@@ -72,7 +71,7 @@ let postcssImport   = require('postcss-import'),
     flexbugs        = require('postcss-flexbugs-fixes');
 
 const processors = [
-  postcssImport, precss, propertyLookup, pxtorem, discardComments, assets, extend, cssnext, short, mqpacker, sorting, flexbugs
+  precss, important, pxtorem, discardComments, assets, extend, cssnext, short, mqpacker, sorting, flexbugs
 ];
 
 let isDevelopment = true,
