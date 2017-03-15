@@ -1,0 +1,49 @@
+.news
+  h2.news__new Новое в мире
+  .items
+    - for (var x = 1; x <= 10; x++)
+      .item
+        .item__wrapb
+          .item__wrap
+            img(src="../img/img1.png", title="").item__img
+        .item__about
+          img(src="../img/photo1.png", title="").item__photo
+          .item__description
+            h3.item__heading Путешествие на лодке по озеру
+            .item__stats
+              svg.icon.icon-comments
+                use(xlink:href='#comments')
+              span.item__comments 9
+              svg.icon.icon-heart
+                use(xlink:href='#heart')
+              span.item__heart 15
+        .item__footer
+          svg.icon.icon-album
+            use(xlink:href='#album')
+          span Прогулки по воде
+
+  .more
+    button.more__btn Показать еще
+.albums
+  h2.albums__title Новое в мире
+  .items
+    - for (var x = 1; x <= 8; x++)
+      .item
+        .item__wrapb
+          .item__wrap
+            img(src="../img/img1.png", title="").item__img
+        .item__about
+          img(src="../img/photo1.png", title="").item__photo
+          .item__description
+            h3.item__heading Путешествие на лодке по озеру
+            .item__stats
+              svg.icon.icon-comments
+                use(xlink:href='#comments')
+              span.item__comments 9
+              svg.icon.icon-heart
+                use(xlink:href='#heart')
+              span.item__heart 15
+        .item__footer
+          svg.icon.icon-album
+            use(xlink:href='#album')
+          span Прогулки по воде

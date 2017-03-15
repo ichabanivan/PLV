@@ -1,0 +1,158 @@
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+
+  &__new {
+    font-size: 40px;
+    color: #323232;
+  }
+}
+
+.albums {
+  @extend .news;
+  background-color: var(--icon-gray);
+
+  &__title {
+    @extend .news__new;
+  }
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: space-around;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  width: 380px;
+  box-shadow: 0 0 10px 1px rgba(190, 190, 190, 0.5);
+
+  &:hover {
+    box-shadow: 0 0 20px 1px rgba(190, 190, 190, 1);
+  }
+
+  &__wrapb {
+    position: relative;
+    width: 380px;
+    height: 250px;
+  }
+
+  &__wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    max-height: none;
+    max-width: none;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &__photo {
+    size: calc(50px + @padding * 2);
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 50%;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    svg {
+      fill: var(--text-gray);
+    }
+  }
+
+  &__stats {
+    display: flex;
+    margin: 5px * 15px;
+
+    .icon {
+      size: 24px;
+      align-self: center;
+      margin: 5px;
+    }
+  }
+
+  &__comments,
+  &__heart {
+    align-self: center;
+    margin: 5px;
+  }
+
+  &__heading {
+    margin: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 270px;
+  }
+
+  &__footer {
+    background-color: var(--icon-gray);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .icon {
+      size: 24px;
+      align-self: center;
+      fill: var(--text-gray);
+      margin: 5px;
+    }
+
+    span {
+      margin: 5px 10px;
+      align-self: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 300px;
+    }
+  }
+}
+
+.more {
+  &__btn {
+    border: 1px solid var(--btn-blue);
+    padding: 15px 20px;
+    border-radius: var(--border-radius);
+    color: var(--btn-blue) #fff;
+    margin: 30px * 50px;
+    cursor: pointer;
+    transition: all 0.15s linear;
+
+    &:hover {
+      color: var(--white) var(--btn-blue);
+    }
+  }
+}
