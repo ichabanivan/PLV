@@ -1,0 +1,66 @@
+.footer {
+   background: resolve(header-bg.png) center bottom no-repeat;
+   background-size: cover;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   color: var(--white);
+   padding: 20px;
+   position: relative;
+
+   @media screen and (width <= 600px) {
+      flex-direction: column;
+   }
+
+   &::before {
+      background: rgba(0,0,0,.5);
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+   }
+
+   &__top {
+      padding: 20px 40px;
+      cursor: pointer;
+      position: relative;
+      z-index: 6664;
+   }
+
+   &__btn {
+      border: none;
+      background-color: var(--transparent);
+      cursor: pointer;
+
+      .icon {
+         fill: var(--text-gray);
+      }
+   }
+   &__service {
+      text-align: left;
+      position: relative;
+      z-index: 1;
+
+      @media screen and (width <= 600px) {
+         text-align: center;
+         order: 1;
+         padding: 10px;
+      }
+   }
+   &__about {
+      text-align: right;
+      position: relative;
+      z-index: 1;
+
+      @media screen and (width <= 600px) {
+         text-align: center;
+         order: 2;
+      }
+   }
+}
+

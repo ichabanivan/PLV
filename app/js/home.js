@@ -1,4 +1,4 @@
-import {svg} from './bundles/svg';
+import {svg} from './bundles/sprites';
 svg(window, document);
 
 import $ from 'jquery';
