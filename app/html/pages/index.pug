@@ -18,29 +18,28 @@ block loadCSS
   link(rel="stylesheet", href="css/libs.css")
 
 block content
-  .wrap_indexPage
-    header.header
-      .header_wrap_text
-        h1 Добро пожаловать
-        p Перед вами сервис, который поможет вам организовать свои
-          br
-          |фотографии в альбомы и поделиться ими со всем миром!
-      form.form
-        .form_wrap_input
-          svg(class="icon envelope")
-            use(xlink:href='#envelope')
-          input(type="email" placeholder="Электронная почта")
-        .form_wrap_input
-          svg(class="icon password")
-            use(xlink:href='#password')
-          input(type="pasworld" placeholder="Пароль")
-        a(href="#") Забыли пароль ?
-        button.form_btn Войти
-        .form_wrap_reg
-          span Нет аккаунта? 
-            a(href="#") Зарегестрироваться
-    footer.footer
-      p 2017 Создано командой профессионалов по веб-разработке: Иван Чабан и Дима Бахта
+  header.header
+    .header_wrap_text
+      h1.h1 Добро пожаловать
+      p Перед вами сервис, который поможет вам организовать свои
+        br
+        |фотографии в альбомы и поделиться ими со всем миром!
+  form.form
+    .form_wrap_input
+      svg(class="icon envelope")
+        use(xlink:href='#envelope')
+      input(type="email" placeholder="Электронная почта")
+    .form_wrap_input
+      svg(class="icon password")
+        use(xlink:href='#password')
+      input(type="pasworld" placeholder="Пароль")
+    a(href="#") Забыли пароль ?
+    button.form_btn Войти
+    .form_wrap_reg
+      span Нет аккаунта? 
+        a(href="#") Зарегестрироваться
+  footer.footer
+    p 2017 Создано командой профессионалов по веб-разработке: Иван Чабан и Дима Бахта
 
 block loadJS
     script(src="js/commons.js")
