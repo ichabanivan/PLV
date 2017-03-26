@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import {svg} from './bundles/svg';
+import {svg} from './bundles/sprites';
 
 svg(window, document);
 $(document).ready(function() {
